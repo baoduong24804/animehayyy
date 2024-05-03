@@ -10,9 +10,12 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
+				<version>3.11.0</version>
 				<configuration>
-					<release>17</release>
+					<source>1.8</source>
+                       <target>1.8</target>
+                      
+                       <verbose>true</verbose>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -21,18 +24,25 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
 	<dependencies>
 
 
-<!-- https://mvnrepository.com/artifact/org.json/json -->
-<dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-    <version>20240303</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20240303</version>
+		</dependency>
 
 
-<!-- https://mvnrepository.com/artifact/org.glassfish.web/jstl-impl -->
+		<!-- https://mvnrepository.com/artifact/org.glassfish.web/jstl-impl -->
 		<dependency>
 			<groupId>org.glassfish.web</groupId>
 			<artifactId>jstl-impl</artifactId>
@@ -47,15 +57,15 @@
 			<version>1.2</version>
 		</dependency>
 
-<!-- https://mvnrepository.com/artifact/org.jboss.spec.javax.servlet/jboss-servlet-api_3.1_spec -->
-<dependency>
-    <groupId>org.jboss.spec.javax.servlet</groupId>
-    <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-    <version>1.0.0.Final</version>
-    <scope>provided</scope>
-</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.jboss.spec.javax.servlet/jboss-servlet-api_3.1_spec -->
+		<dependency>
+			<groupId>org.jboss.spec.javax.servlet</groupId>
+			<artifactId>jboss-servlet-api_3.1_spec</artifactId>
+			<version>1.0.0.Final</version>
+			<scope>provided</scope>
+		</dependency>
 
 
-
-  </dependencies>
+	</dependencies>
 </project>
